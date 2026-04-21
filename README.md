@@ -8,6 +8,7 @@ This repository serves as a professional gallery of my web development work. It 
 A minimalist interactive counter designed to demonstrate modern CSS styling techniques and fundamental JavaScript logic.
 
 * **Technologies:** HTML5, CSS3, Vanilla JavaScript.
+* **Live Demo:** [Click Counter] (https://io-kumo.github.io/featured-projects/core-projects/click-counter)
 
 ---
 

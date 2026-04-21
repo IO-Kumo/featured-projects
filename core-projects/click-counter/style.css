@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* --- Page Layout --- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* --- Flexbox Layout --- */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: center;
+}
+body {
+  background-color: #0b0b0b;
+}
+/* --- Text Color --- */
+.page-header,
+.page-main * {
+  color: #f8f8ff;
+}
+/* --- Header --- */
+.page-header__page-title {
+  font-family: "PlayFair Display", Georgia, "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-shadow: 0 0 5px;
+}
+/* --- Main Font --- */
+.page-main * {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+/* --- Main Layout --- */
+.page-main__BTN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+/* --- Buttons --- */
+#click-BTN,
+#subtract-BTN,
+#reset-BTN {
+  background-color: #0b0b0b;
+  border-radius: 15px;
+  border: 1px solid #f8f8ff;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px;
+  letter-spacing: 0.1rem;
+  padding: 0.3rem;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  transition-duration: 0.4s;
+}
+/* --- Buttons Hover --- */
+#click-BTN:hover,
+#subtract-BTN:hover,
+#reset-BTN:hover {
+  cursor: pointer;
+  background-color: #f8f8ff;
+  color: #0b0b0b;
+}
+/* --- Counter --- */
+.page-main__counter {
+  margin-top: 2.5rem;
+}
+
+.click-count-label {
+  text-shadow: 0 0 4px;
+  letter-spacing: 0.09rem;
+}
+/* --- Page Animation --- */
+@keyframes slideDownAnimation {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* --- Title Animation --- */
+.page-header__page-title {
+  animation-name: slideDownAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+/* --- Buttons Animation --- */
+#click-BTN {
+  animation-name: slideDownAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+#subtract-BTN {
+  animation-name: slideDownAnimation;
+  animation-duration: 2.2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+#reset-BTN {
+  animation-name: slideDownAnimation;
+  animation-duration: 2.4s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+/* --- Counter Animation --- */
+.click-count-label {
+  animation-name: slideDownAnimation;
+  animation-duration: 2.6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
